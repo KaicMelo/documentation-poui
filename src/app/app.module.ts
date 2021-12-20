@@ -1,3 +1,6 @@
+import { AccordionItemModule } from './accordion-item/accordion-item.module';
+import { AccordionModule } from './accordion/accordion.module';
+import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,7 +17,11 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     PoTemplatesModule,
     PoModule,
-    RouterModule.forRoot([])
+    RouterModule,
+    AppRoutingModule,
+    RouterModule.forRoot([]),
+    AccordionModule,
+    AccordionItemModule
   ],
   providers: [],
   bootstrap: [AppComponent]

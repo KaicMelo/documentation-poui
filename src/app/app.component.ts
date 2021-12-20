@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { PoMenuItem } from '@po-ui/ng-components';
 
@@ -8,10 +9,16 @@ import { PoMenuItem } from '@po-ui/ng-components';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title:string = 'teste';
+
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 
   readonly menus: Array<PoMenuItem> = [
-    { label: 'Accordion', action: this.onClick.bind(this) },
-    { label: 'Accordion Item', action: this.onClick.bind(this) },
+    { label: 'Accordion', action: () => this.router.navigate(['/accordion']) },
+    {
+      label: 'Accordion Item',
+      action: () => this.router.navigate(['accordionItem']),
+    },
     { label: 'Avatar', action: this.onClick.bind(this) },
     { label: 'Breadcrumb', action: this.onClick.bind(this) },
     { label: 'Button', action: this.onClick.bind(this) },
@@ -54,7 +61,6 @@ export class AppComponent {
   ];
 
   private onClick() {
-    alert('Clicked in menu item')
+    alert('Clicked in menu item');
   }
-
 }
