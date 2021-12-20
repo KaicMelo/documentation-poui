@@ -1,3 +1,4 @@
+import { HomeModule } from './home/home.module';
 import { AccordionItemModule } from './accordion-item/accordion-item.module';
 import { AccordionModule } from './accordion/accordion.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,7 +22,8 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     RouterModule.forRoot([]),
     AccordionModule,
-    AccordionItemModule
+    AccordionItemModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

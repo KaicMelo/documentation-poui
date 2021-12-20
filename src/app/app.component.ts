@@ -9,7 +9,7 @@ import { PoMenuItem } from '@po-ui/ng-components';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'teste';
+  title: string = 'Selecione a documentação que deseja consultar';
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 
