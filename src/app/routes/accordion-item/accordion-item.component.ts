@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterContentInit, Component, ViewChild } from '@angular/core';
 import { PoAccordionItemComponent } from '@po-ui/ng-components';
 
 @Component({
@@ -6,15 +6,11 @@ import { PoAccordionItemComponent } from '@po-ui/ng-components';
   templateUrl: './accordion-item.component.html',
   styleUrls: ['./accordion-item.component.css']
 })
-export class AccordionItemComponent implements OnInit {
+export class AccordionItemComponent implements AfterContentInit {
 
   @ViewChild(PoAccordionItemComponent, { static: true }) item1!: PoAccordionItemComponent;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
   ngAfterContentInit() {
-    // this.item1.collapse();
+    this.item1.expand();
   }
 }

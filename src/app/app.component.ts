@@ -6,7 +6,7 @@ import { PoMenuItem } from '@po-ui/ng-components';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title: string = 'Selecione o tópico da documentação que deseja consultar';
@@ -19,7 +19,7 @@ export class AppComponent {
       label: 'Accordion Item',
       action: () => this.router.navigate(['accordionItem']),
     },
-    { label: 'Avatar', action: this.onClick.bind(this) },
+    { label: 'Avatar', action: () => this.router.navigate(['avatar']) },
     { label: 'Breadcrumb', action: this.onClick.bind(this) },
     { label: 'Button', action: this.onClick.bind(this) },
     { label: 'Button Group', action: this.onClick.bind(this) },
@@ -113,7 +113,7 @@ export class AppComponent {
     { label: 'Tree View', action: this.onClick.bind(this) },
     { label: 'Upload', action: this.onClick.bind(this) },
     { label: 'Url', action: this.onClick.bind(this) },
-    { label: 'Widget', action: this.onClick.bind(this) }
+    { label: 'Widget', action: this.onClick.bind(this) },
   ];
 
   private onClick() {

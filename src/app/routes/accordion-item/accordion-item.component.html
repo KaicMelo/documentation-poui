@@ -1,0 +1,45 @@
+<p class="title-detail">importar no modulo o <b>PoAccordionModule</b></p>
+
+<div class="title-detail">
+<pre>
+&lt;po-accordion&gt;
+  &lt;po-accordion-item p-label="PO Accordion 1" #item1&gt;
+    Conteudo
+  &lt;/po-accordion-item&gt;
+
+  &lt;po-accordion-item p-label="PO Accordion 2"&gt;
+    Conteudo
+  &lt;/po-accordion-item&gt;
+&lt;/po-accordion&gt;
+</pre>
+</div>
+<div class="title-detail">
+<pre>
+@ViewChild(PoAccordionItemComponent, &#123; static: true &#125;) item1!: PoAccordionItemComponent;
+
+ngAfterContentInit() &#123;
+  this.item1.expand();
+&#125;
+</pre>
+</div>
+
+<po-accordion>
+  <po-accordion-item p-label="Como comprar o produto ?" #item1>
+    So perhaps, you've generated some fancy text, and you're content that you
+    can now copy and paste your fancy text in the comments section of funny cat
+    videos, but perhaps you're wondering how it's even possible to change the
+    font of your text? Is it some sort of hack? Are you copying and pasting an
+    actual font?
+  </po-accordion-item>
+
+  <po-accordion-item p-label="Qual o numero telefone ?">
+    So perhaps, you've generated some fancy text, and you're content that you
+    can now copy and paste your fancy text in the comments section of funny cat
+    videos, but perhaps you're wondering how it's even possible to change the
+    font of your text? Is it some sort of hack? Are you copying and pasting an
+    actual font?
+  </po-accordion-item>
+</po-accordion>
+
+<p class="footer-detail">Utilizado para abrir algum item via Typescript</p>
+<p class="footer-detail">Pôde verificar que o primeiro item esta aberto automaticamento ? Essa é a funcionalidade principal desse item</p>

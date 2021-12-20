@@ -1,6 +1,7 @@
-import { HomeModule } from './home/home.module';
-import { AccordionItemModule } from './accordion-item/accordion-item.module';
-import { AccordionModule } from './accordion/accordion.module';
+import { AvatarModule } from './routes/avatar/avatar.module';
+import { HomeModule } from './routes/home/home.module';
+import { AccordionItemModule } from './routes/accordion-item/accordion-item.module';
+import { AccordionModule } from './routes/accordion/accordion.module';
 import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,9 +22,10 @@ import { RouterModule } from '@angular/router';
     RouterModule,
     AppRoutingModule,
     RouterModule.forRoot([]),
+    HomeModule,
     AccordionModule,
     AccordionItemModule,
-    HomeModule
+    AvatarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
