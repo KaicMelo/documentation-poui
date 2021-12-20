@@ -2,7 +2,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AccordionItemComponent } from './accordion-item.component';
-import { AccordionItemRoutingModule } from './accordion-Item-routing.module';
+import { PoAccordionModule } from '@po-ui/ng-components';
+import { AccordionItemRoutingModule } from './accordion-item-routing.module';
 
 
 
@@ -10,7 +11,8 @@ import { AccordionItemRoutingModule } from './accordion-Item-routing.module';
   declarations: [AccordionItemComponent],
   imports: [
     CommonModule,
-    AccordionItemRoutingModule
+    AccordionItemRoutingModule,
+    PoAccordionModule,
   ]
 })
 export class AccordionItemModule { }

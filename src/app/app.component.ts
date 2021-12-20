@@ -9,7 +9,7 @@ import { PoMenuItem } from '@po-ui/ng-components';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Selecione a documentação que deseja consultar';
+  title: string = 'Selecione o tópico da documentação que deseja consultar';
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 
@@ -30,6 +30,7 @@ export class AppComponent {
     { label: 'Code Editor', action: this.onClick.bind(this) },
     { label: 'Code Editor Register', action: this.onClick.bind(this) },
     { label: 'Combo', action: this.onClick.bind(this) },
+    { label: 'Combo Option Template', action: this.onClick.bind(this) },
     { label: 'Container', action: this.onClick.bind(this) },
     { label: 'Data Transform', action: this.onClick.bind(this) },
     { label: 'Datepicker', action: this.onClick.bind(this) },
@@ -58,6 +59,61 @@ export class AppComponent {
     { label: 'Loading Overlay', action: this.onClick.bind(this) },
     { label: 'Login', action: this.onClick.bind(this) },
     { label: 'Lookup', action: this.onClick.bind(this) },
+    { label: 'Menu', action: this.onClick.bind(this) },
+    { label: 'Menu Header Template', action: this.onClick.bind(this) },
+    { label: 'Menu Panel', action: this.onClick.bind(this) },
+    { label: 'Modal', action: this.onClick.bind(this) },
+    { label: 'Modal Footer', action: this.onClick.bind(this) },
+    { label: 'Modal Password Recovery', action: this.onClick.bind(this) },
+    { label: 'Multiselect', action: this.onClick.bind(this) },
+    { label: 'Navbar', action: this.onClick.bind(this) },
+    { label: 'Network', action: this.onClick.bind(this) },
+    { label: 'Network Status', action: this.onClick.bind(this) },
+    { label: 'Notification', action: this.onClick.bind(this) },
+    { label: 'Number', action: this.onClick.bind(this) },
+    { label: 'Page Blocked User', action: this.onClick.bind(this) },
+    { label: 'Page Change Password', action: this.onClick.bind(this) },
+    { label: 'Page Default', action: this.onClick.bind(this) },
+    { label: 'Page Detail', action: this.onClick.bind(this) },
+    { label: 'Page Dynamic Detail', action: this.onClick.bind(this) },
+    { label: 'Page Dynamic Edit', action: this.onClick.bind(this) },
+    { label: 'Page Dynamic Search', action: this.onClick.bind(this) },
+    { label: 'Page Dynamic Table', action: this.onClick.bind(this) },
+    { label: 'Page Edit', action: this.onClick.bind(this) },
+    { label: 'Page Job Scheduler', action: this.onClick.bind(this) },
+    { label: 'Page List', action: this.onClick.bind(this) },
+    { label: 'Page Login', action: this.onClick.bind(this) },
+    { label: 'Page Slide', action: this.onClick.bind(this) },
+    { label: 'Password', action: this.onClick.bind(this) },
+    { label: 'Popover', action: this.onClick.bind(this) },
+    { label: 'Popup', action: this.onClick.bind(this) },
+    { label: 'Progress', action: this.onClick.bind(this) },
+    { label: 'Query Builder', action: this.onClick.bind(this) },
+    { label: 'Radio Group', action: this.onClick.bind(this) },
+    { label: 'Rich Text', action: this.onClick.bind(this) },
+    { label: 'Select', action: this.onClick.bind(this) },
+    { label: 'Select Option Template', action: this.onClick.bind(this) },
+    { label: 'Slide', action: this.onClick.bind(this) },
+    { label: 'Slide Content Template', action: this.onClick.bind(this) },
+    { label: 'Step', action: this.onClick.bind(this) },
+    { label: 'Stepper', action: this.onClick.bind(this) },
+    { label: 'Storage', action: this.onClick.bind(this) },
+    { label: 'Switch', action: this.onClick.bind(this) },
+    { label: 'Sync', action: this.onClick.bind(this) },
+    { label: 'Tab', action: this.onClick.bind(this) },
+    { label: 'Table', action: this.onClick.bind(this) },
+    { label: 'Table Cell Template', action: this.onClick.bind(this) },
+    { label: 'Table Column Template', action: this.onClick.bind(this) },
+    { label: 'Table Row Template', action: this.onClick.bind(this) },
+    { label: 'Tabs', action: this.onClick.bind(this) },
+    { label: 'Tag', action: this.onClick.bind(this) },
+    { label: 'Textarea', action: this.onClick.bind(this) },
+    { label: 'Toolbar', action: this.onClick.bind(this) },
+    { label: 'Tooltip', action: this.onClick.bind(this) },
+    { label: 'Tree View', action: this.onClick.bind(this) },
+    { label: 'Upload', action: this.onClick.bind(this) },
+    { label: 'Url', action: this.onClick.bind(this) },
+    { label: 'Widget', action: this.onClick.bind(this) }
   ];
 
   private onClick() {
