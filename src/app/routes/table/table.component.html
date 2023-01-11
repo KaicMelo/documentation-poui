@@ -1,0 +1,62 @@
+<p class="title-detail">importar no modulo o <b>PoTableModule</b></p>
+
+<po-table
+  [p-auto-collapse]="true"
+  [p-columns]="columns"
+  [p-hide-columns-manager]="true"
+  [p-items]="items"
+  [p-sort]="true"
+  [p-striped]="true"
+  [p-actions]="actions"
+  [p-selectable]="true"
+>
+  <ng-template
+    p-table-row-template
+    let-rowItem
+    let-i="rowIndex"
+    [p-table-row-template-arrow-direction]="templateDirection"
+    [p-table-row-template-show]="isUndelivered"
+  >
+    <po-widget p-title="Transport detail {{ rowItem.code }}">
+      <div class="po-row">
+        <po-input
+        class="po-md-3"
+        name="code"
+        [(ngModel)]="rowItem.code"
+        p-label="Código"
+      >
+      </po-input>
+        <po-select
+          class="po-md-3"
+          name="status"
+          ngModel="delivered"
+          p-label="Transport status"
+          [p-options]="statusOptions"
+        >
+        </po-select>
+        <po-input
+        class="po-md-3"
+        name="product"
+        [(ngModel)]="rowItem.product"
+        p-label="Produto"
+      >
+      </po-input>
+      </div>
+
+      <div class="po-row">
+        <po-info
+          class="po-md-4"
+          p-label="Batch of product"
+          [p-orientation]="horizontal"
+          [p-value]="rowItem.batch_product"
+        >
+        </po-info>
+
+        <po-info class="po-md-4" p-label="Driver" [p-orientation]="horizontal" [p-value]="rowItem.driver"> </po-info>
+
+        <po-info class="po-md-4" p-label="License plate" [p-orientation]="horizontal" [p-value]="rowItem.license_plate">
+        </po-info>
+      </div>
+    </po-widget>
+  </ng-template>
+</po-table>

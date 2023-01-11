@@ -27,6 +27,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./routes/avatar/avatar.module').then((m) => m.AvatarModule),
   },
+  {
+    path: 'table',
+    loadChildren: () =>
+      import('./routes/table/table.module').then((m) => m.TableModule),
+  },
 ];
 
 @NgModule({

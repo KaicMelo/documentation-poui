@@ -101,7 +101,7 @@ export class AppComponent {
     { label: 'Switch', action: this.onClick.bind(this) },
     { label: 'Sync', action: this.onClick.bind(this) },
     { label: 'Tab', action: this.onClick.bind(this) },
-    { label: 'Table', action: this.onClick.bind(this) },
+    { label: 'Table', action: () => this.router.navigate(['table']) },
     { label: 'Table Cell Template', action: this.onClick.bind(this) },
     { label: 'Table Column Template', action: this.onClick.bind(this) },
     { label: 'Table Row Template', action: this.onClick.bind(this) },
