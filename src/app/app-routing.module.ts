@@ -28,6 +28,11 @@ const routes: Routes = [
       import('./routes/avatar/avatar.module').then((m) => m.AvatarModule),
   },
   {
+    path: 'list-view',
+    loadChildren: () =>
+      import('./routes/list-view/list-view.module').then((m) => m.ListViewModule),
+  },
+  {
     path: 'table',
     loadChildren: () =>
       import('./routes/table/table.module').then((m) => m.TableModule),

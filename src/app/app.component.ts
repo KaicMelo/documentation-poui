@@ -53,7 +53,7 @@ export class AppComponent {
     { label: 'I18n', action: this.onClick.bind(this) },
     { label: 'Info', action: this.onClick.bind(this) },
     { label: 'Input', action: this.onClick.bind(this) },
-    { label: 'List View', action: this.onClick.bind(this) },
+    { label: 'List View', action: () => this.router.navigate(['list-view']) },
     { label: 'List View Content Template', action: this.onClick.bind(this) },
     { label: 'List View Detail Template', action: this.onClick.bind(this) },
     { label: 'Loading Overlay', action: this.onClick.bind(this) },

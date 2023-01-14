@@ -1,0 +1,27 @@
+<po-list-view
+  p-property-title="name"
+  [p-actions]="actions"
+  [p-hide-select-all]="true"
+    p-property-link="url"
+    [p-select]="true"
+  [p-items]="[
+    { name: 'Registro 1', email: 'register@po-ui.com' },
+    {
+      hireStatus: 'progress',
+      name: 'Brian Brown',
+      city: 'Buffalo',
+      age: 23,
+      idCard: 'HG56lds54',
+      email: 'brian@brown.com',
+      telephone: '1-543-456-9876',
+      jobDescription: 'Trainee',
+      url: 'https://po-ui.io/'
+    },
+  ]"
+>
+  <ng-template p-list-view-content-template let-item>
+    <div class="po-row">
+      <po-info class="po-md-12" p-label="Email" [p-value]="item.email"></po-info>
+    </div>
+  </ng-template>
+</po-list-view>
