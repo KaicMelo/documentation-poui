@@ -1,3 +1,5 @@
+import { CustomComponentModule } from './routes/custom-component/custom-component.module';
+import { CustomComponentComponent } from './routes/custom-component/custom-component.component';
 import { AvatarModule } from './routes/avatar/avatar.module';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -26,6 +28,11 @@ const routes: Routes = [
     path: 'avatar',
     loadChildren: () =>
       import('./routes/avatar/avatar.module').then((m) => m.AvatarModule),
+  },
+  {
+    path: 'custom',
+    loadChildren: () =>
+      import('./routes/custom-component/custom-component.module').then((m) => m.CustomComponentModule),
   },
   {
     path: 'list-view',

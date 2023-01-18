@@ -32,6 +32,7 @@ export class AppComponent {
     { label: 'Combo', action: this.onClick.bind(this) },
     { label: 'Combo Option Template', action: this.onClick.bind(this) },
     { label: 'Container', action: this.onClick.bind(this) },
+    { label: 'Custom', action: () => this.router.navigate(['custom']) },
     { label: 'Data Transform', action: this.onClick.bind(this) },
     { label: 'Datepicker', action: this.onClick.bind(this) },
     { label: 'Datepicker Range', action: this.onClick.bind(this) },

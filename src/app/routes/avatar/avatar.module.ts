@@ -4,8 +4,6 @@ import { CommonModule } from '@angular/common';
 import { AvatarComponent } from './avatar.component';
 import { PoAvatarModule } from '@po-ui/ng-components';
 
-
-
 @NgModule({
   declarations: [
     AvatarComponent

@@ -1,0 +1,48 @@
+<div id="configure-container-{{ index }}">
+  <section class="configure-cycle-section po-row">
+    <po-select
+      id="step-selected-{{ index }}"
+      (p-change)="onChange()"
+      class="po-md-3"
+      p-label="Nome"
+      p-placeholder="Selecione"
+      [p-options]="options"
+      [p-required]="true"
+    >
+    </po-select>
+    <po-textarea
+      id="description-selected-{{ index }}"
+      (p-change)="onChange()"
+      [ngModelOptions]="{ standalone: true }"
+      [(ngModel)]="configureCycleStep.description"
+      [p-rows]="3"
+      class="po-md-4"
+      p-label="Descrição"
+    >
+    </po-textarea>
+    <po-datepicker
+      id="startDate-selected-{{ index }}"
+      (p-change)="onChange()"
+      [(ngModel)]="configureCycleStep.startDate"
+      class="po-md-2"
+      p-label='Data inicio'
+      p-placeholder="dd/mm/aaaa"
+    >
+    </po-datepicker>
+    <po-datepicker
+      id="endDate-selected-{{ index }}"
+      (p-change)="onChange()"
+      [(ngModel)]="configureCycleStep.endDate"
+      class="po-md-2"
+      p-label='Data fim'
+      p-placeholder="dd/mm/aaaa"
+    >
+    </po-datepicker>
+
+    <po-dropdown
+      id="dropdown-action-cycle-modal-{{ index }}"
+      p-label="..."
+      [p-actions]="actions"
+    ></po-dropdown>
+  </section>
+</div>
