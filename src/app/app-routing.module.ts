@@ -33,6 +33,11 @@ const routes: Routes = [
       import('./routes/list-view/list-view.module').then((m) => m.ListViewModule),
   },
   {
+    path: 'modal',
+    loadChildren: () =>
+      import('./routes/modal/modal.module').then((m) => m.ModalModule),
+  },
+  {
     path: 'table',
     loadChildren: () =>
       import('./routes/table/table.module').then((m) => m.TableModule),

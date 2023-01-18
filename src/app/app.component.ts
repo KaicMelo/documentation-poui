@@ -62,7 +62,7 @@ export class AppComponent {
     { label: 'Menu', action: this.onClick.bind(this) },
     { label: 'Menu Header Template', action: this.onClick.bind(this) },
     { label: 'Menu Panel', action: this.onClick.bind(this) },
-    { label: 'Modal', action: this.onClick.bind(this) },
+    { label: 'Modal', action: () => this.router.navigate(['/modal']) },
     { label: 'Modal Footer', action: this.onClick.bind(this) },
     { label: 'Modal Password Recovery', action: this.onClick.bind(this) },
     { label: 'Multiselect', action: this.onClick.bind(this) },
